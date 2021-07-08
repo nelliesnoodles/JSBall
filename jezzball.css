@@ -1,0 +1,127 @@
+﻿body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.east-west {
+    cursor: ew-resize;
+ 
+}
+
+.cell:hover {
+    background: white;
+    opacity: 0.5;
+}
+
+.north-south {
+    cursor: ns-resize;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 5vh;
+}
+
+#gamescreen {
+    display: inline-block;   
+    position: fixed;
+    top: 40px;
+   
+}
+
+.up {
+    background-image: none;
+    background: red;
+}
+.left {
+    background-image: none;
+    background: red;
+}
+.down {
+    background-image: none;
+    background: blue;
+}
+.right {
+    background-image: none;
+    background: blue;
+}
+
+/* ball image to be rotated in jezzball.js */
+.ball {
+    background-size: contain;
+    
+}
+
+/* cells are dynamically added in MATRIX.js, these can be hardcoded in if necessary.*/
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+#GAMEOVER {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: silver;
+    color: blue;
+    border-bottom: 8px double blue;
+    border-top: 8px double blue;
+}
+.center-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-row-even {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.center-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cell {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    
+}
+.left-border {
+    border-left: 2px solid red;
+}
+
+.right-border {
+    border-right: 2px solid red;
+}
+
+.top-border {
+    border-top: 2px solid red;
+}
+
+.bottom-border {
+    border-bottom: 2px solid red;
+}
